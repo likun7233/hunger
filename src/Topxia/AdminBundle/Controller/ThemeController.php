@@ -10,7 +10,7 @@ class ThemeController extends BaseController
 {
     public function indexAction (Request $request)
     {
-        $currentTheme = $this->setting('theme', array('uri' => 'default'));
+        $currentTheme = $this->setting('theme', array('uri' => 'autumn'));
 
         $themes = $this->getThemes();
         return $this->render('TopxiaAdminBundle:Theme:index.html.twig', array(
