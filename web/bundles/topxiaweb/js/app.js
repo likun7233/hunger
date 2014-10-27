@@ -2,6 +2,7 @@ define(function(require, exports, module) {
 	window.$ = window.jQuery = require('jquery');
 	require('bootstrap');
 	require('common/bootstrap-modal-hack2');
+	require('animate-css.css');
 	seajs.use('headroom');
 
 
@@ -18,7 +19,16 @@ define(function(require, exports, module) {
 			}
 		});
 
-		$("#site-navbar").headroom();
+		var headroom = new Headroom($("#site-navbar")[0], {
+		  "tolerance": 5,
+		  "offset": 205,
+		  "classes": {
+		    "initial": "animated",
+		    "pinned": "swingInX",
+		    "unpinned": "swingOutX"
+		  }
+		});
+		headroom.init();
 	};
 
 	window.app.load = exports.load;
