@@ -21,7 +21,6 @@ seajs.config({
 		"jquery.plupload-queue-zh-cn": "jquery-plugin/plupload-queue/2.0.0/i18n/zh-cn",
 		"mediaelementplayer": "gallery2/mediaelement/2.14.2/mediaelement-and-player",
 		"headroom": "arale/headroom/1.0.0/headroom",
-		"animate-css": "arale/headroom/1.0.0/animate.css",
 		'bootstrap': 'gallery2/bootstrap/3.1.1/bootstrap',
 		'kindeditor': 'gallery2/kindeditor/4.1.10/kindeditor',
 		'autocomplete': 'arale/autocomplete/1.2.2/autocomplete',
