@@ -103,7 +103,7 @@ class __TwigTemplate_3d76e5f6d1cd30aa134f26cbcff477b0d3feaef873cb863b1f26663518c
         <a class=\"navbar-brand\" href=\"";
         // line 40
         echo $this->env->getExtension('routing')->getUrl("admin");
-        echo "\">Edusoho管理后台</a>
+        echo "\">Hunger管理后台</a>
       </div>
       <div class=\"navbar-collapse collapse\">
 
@@ -229,7 +229,7 @@ class __TwigTemplate_3d76e5f6d1cd30aa134f26cbcff477b0d3feaef873cb863b1f26663518c
     // line 13
     public function block_title($context, array $blocks = array())
     {
-        echo "EduSoho管理后台";
+        echo "Hunger管理后台";
     }
 
     // line 21
