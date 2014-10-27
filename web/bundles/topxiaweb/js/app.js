@@ -3,7 +3,7 @@ define(function(require, exports, module) {
 	require('bootstrap');
 	require('common/bootstrap-modal-hack2');
 	require('animate-css.css');
-	seajs.use('headroom');
+	var Headroom = require('headroom');
 
 
 	exports.load = function(name) {
