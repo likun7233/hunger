@@ -2,6 +2,8 @@ define(function(require, exports, module) {
 	window.$ = window.jQuery = require('jquery');
 	require('bootstrap');
 	require('common/bootstrap-modal-hack2');
+	require('headroom');
+
 
 	exports.load = function(name) {
 		if (window.app.jsPaths[name.split('/', 1)[0]] == undefined) {
@@ -16,6 +18,8 @@ define(function(require, exports, module) {
 			}
 		});
 
+		alert(1);
+		$("#site-navbar").headroom();
 	};
 
 	window.app.load = exports.load;
