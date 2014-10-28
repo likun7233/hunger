@@ -1,5 +1,5 @@
 
-define('arale/footerset/1.0.0/footerset',['jquery'],function($){
+define('arale/footerset/1.0.0/footerset',['$'],function(){
 
   var Footerset = {
     init: function(){
@@ -29,7 +29,6 @@ define('arale/footerset/1.0.0/footerset',['jquery'],function($){
       var offset = c.outerHeight(true) - c.height(),
           cOuter = $(window).outerHeight(true) - h.outerHeight(true) - f.outerHeight(true),
           height = cOuter - offset;
-          debugger;
       c.height(height);
     }
 
