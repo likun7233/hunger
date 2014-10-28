@@ -306,6 +306,7 @@ a:hover {
     color: #666;
     text-align: center;
     padding: 10px 0;
+    display: none;
 }
 
 .footer-autumn ,
