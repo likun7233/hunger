@@ -6,6 +6,25 @@ define(function(require, exports, module) {
 	var FooterSet = require('footerset');
 
 
+	/**
+	 * 设置Header效果
+	 * @type {Headroom}
+	 */
+	var headroom = new Headroom($("#site-navbar")[0], {
+	  "tolerance": 5,
+	  "offset": 205,
+	  "classes": {
+	    "initial": "animated",
+	    "pinned": "swingInX",
+	    "unpinned": "swingOutX"
+	  }
+	});
+	headroom.init();
+
+	console.log(FooterSet);
+	//底部位置设置
+	FooterSet.init();
+
 	exports.load = function(name) {
 		if (window.app.jsPaths[name.split('/', 1)[0]] == undefined) {
 			name = window.app.basePath + '/bundles/topxiaweb/js/controller/' + name;
@@ -18,24 +37,6 @@ define(function(require, exports, module) {
 				module.run();
 			}
 		});
-
-		/**
-		 * 设置Header效果
-		 * @type {Headroom}
-		 */
-		var headroom = new Headroom($("#site-navbar")[0], {
-		  "tolerance": 5,
-		  "offset": 205,
-		  "classes": {
-		    "initial": "animated",
-		    "pinned": "swingInX",
-		    "unpinned": "swingOutX"
-		  }
-		});
-		headroom.init();
-
-		//底部位置设置
-		FooterSet.init();
 	};
 
 	window.app.load = exports.load;
