@@ -1,5 +1,5 @@
 
-define('arale/headroom/1.0.0/footerset',['jquery'],function($){
+define('arale/footerset/1.0.0/footerset',['jquery'],function($){
 
   var Footerset = {
     init: function(){
