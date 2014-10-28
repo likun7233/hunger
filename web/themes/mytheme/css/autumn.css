@@ -62,13 +62,20 @@ a:hover {
     border: 1px solid #e2e2e2;
     padding: 0px;
 
+}
+
+.teachers-item, 
+.autumn-grid, 
+.user-learn{
     position: relative;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    padding: 2em 1.5em;
+    padding: 2em 1.5em;   
 }
 
-.autumn-grid:before, .autumn-grid:after {
+.teachers-item:before, .teachers-item:after, 
+.autumn-grid:before, .autumn-grid:after, 
+.user-learn:before, .user-learn:after{
   z-index: -1; 
   position: absolute; 
   content: "";
@@ -82,7 +89,9 @@ a:hover {
   transform: rotate(-3deg);
 }
 
-.autumn-grid:after {
+.teachers-item:after, 
+.autumn-grid:after,
+.user-learn:after {
   transform: rotate(3deg);
   right: 10px;
   left: auto;
