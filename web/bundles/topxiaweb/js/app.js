@@ -3,6 +3,7 @@ define(function(require, exports, module) {
 	require('bootstrap');
 	require('common/bootstrap-modal-hack2');
 	var Headroom = require('headroom');
+	var FooterSet = require('footerset');
 
 
 	exports.load = function(name) {
@@ -18,6 +19,10 @@ define(function(require, exports, module) {
 			}
 		});
 
+		/**
+		 * 设置Header效果
+		 * @type {Headroom}
+		 */
 		var headroom = new Headroom($("#site-navbar")[0], {
 		  "tolerance": 5,
 		  "offset": 205,
@@ -28,6 +33,9 @@ define(function(require, exports, module) {
 		  }
 		});
 		headroom.init();
+
+		//底部位置设置
+		FooterSet.init();
 	};
 
 	window.app.load = exports.load;
