@@ -29,7 +29,7 @@ define('arale/footerset/1.0.0/footerset',['$'],function(){
       var offset = c.outerHeight(true) - c.height(),
           cOuter = $(window).outerHeight(true) - h.outerHeight(true) - f.outerHeight(true),
           height = cOuter - offset;
-      c.css({'min-height', height+'px'});
+      c.css('min-height', height+'px');
     }
 
   };
