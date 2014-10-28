@@ -24,7 +24,7 @@ define(function(require, exports, module) {
 	console.log(FooterSet);
 	//底部位置设置
 	FooterSet.init();
-	$("#footer").show('slow');
+	$("#footer").fadeIn('fast');;
 
 	exports.load = function(name) {
 		if (window.app.jsPaths[name.split('/', 1)[0]] == undefined) {
