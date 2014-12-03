@@ -1,6 +1,5 @@
 body {
     background-color: #f1f2f6;
-    padding-top: 54px;
 }
 
 a {
@@ -13,10 +12,11 @@ a:hover {
 }
 
 .site-navbar {
-    background-color: #049273;
+    background-color: rgba(0,0,0, 0.2);
     margin-bottom: 0px;
     border-radius: 0px;
     border: 0px;
+    min-width: 56px;
 }
 
 .site-navbar .navbar-header a.navbar-brand {
